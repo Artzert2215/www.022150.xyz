@@ -30,11 +30,6 @@
   font-display: swap;
 }
 
-:root {
-  --color-primary: #1739d1;
-  --color-secondary: #868686;
-}
-
 body {
   font-family: 'Atkinson Hyperlegible Next', sans-serif;
   font-optical-sizing: auto;
@@ -51,8 +46,13 @@ h2 {
   color: var(--color-secondary);
 }
 
-code, pre, kbd, samp {
+input[type="text"], textarea, code, pre, kbd, samp {
   font-family: 'Atkinson Hyperlegible Mono', monospace;
+}
+
+button {
+  font-family: 'Atkinson Hyperlegible Next', sans-serif;
+  font-weight: 600;
 }
 
 q {
@@ -72,3 +72,4 @@ a:hover {
   color: var(--color-primary);
   text-decoration: underline;       /* add underline back on hover */
 }
+

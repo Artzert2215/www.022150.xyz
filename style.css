@@ -1,3 +1,10 @@
+:root {
+  --color-primary: #1739d1;
+  --color-secondary: #868686;
+  --color-border: #ccc;
+  --border-radius: 8px;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -5,15 +12,14 @@ body {
 }
 
 main, header, footer {
-  --max-width: 960px;
-  --padding: 8px;
+  --max-width: ;
 
-  width: min(var(--max-width), 100% - var(--padding) * 2);
+  width: min(960px, 100% - 13px * 2);
   margin-inline: auto;
-  margin-block: var(--padding);
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: var(--padding);
+  margin-block: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 8px 12px;
 }
 
 header, footer {
@@ -26,12 +32,49 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1.5rem;
+  gap: 12px;
 }
 
 hr {
   border: none;
   width: 80%;
   margin-inline: auto;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--color-border);
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--color-border);
+  box-sizing: border-box;
+  resize: vertical;
+  border-radius: var(--border-radius);
+}
+
+input[type="text"]:focus, textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+button {
+  display: block;
+  padding: 7px 18px;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: opacity 0.10s ease;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-inline: auto;
+  min-width: 250px;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button:active {
+  opacity: 0.7;
 }

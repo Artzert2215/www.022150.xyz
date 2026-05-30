@@ -6,7 +6,8 @@ class SiteHeader extends HTMLElement {
         <hr>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./document.html">Documents</a></li>
             </ul>
         </nav>
     </header>
