@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Atkinson Hyperlegible Next';
-  src: url('/fonts/AtkinsonHyperlegibleNext-VariableFont_wght.woff2') format('woff2');
+  src: url('./AtkinsonHyperlegibleNext-VariableFont_wght.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Atkinson Hyperlegible Next';
-  src: url('/fonts/AtkinsonHyperlegibleNext-Italic-VariableFont_wght.woff2') format('woff2');
+  src: url('./AtkinsonHyperlegibleNext-Italic-VariableFont_wght.woff2') format('woff2');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'Atkinson Hyperlegible Mono';
-  src: url('/fonts/AtkinsonHyperlegibleMono-VariableFont_wght.woff2') format('woff2');
+  src: url('./AtkinsonHyperlegibleMono-VariableFont_wght.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'Atkinson Hyperlegible Mono';
-  src: url('/fonts/AtkinsonHyperlegibleMono-Italic-VariableFont_wght.woff2') format('woff2');
+  src: url('./AtkinsonHyperlegibleMono-Italic-VariableFont_wght.woff2') format('woff2');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
