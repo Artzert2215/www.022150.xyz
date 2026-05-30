@@ -28,3 +28,10 @@ nav ul {
   display: flex;
   gap: 1.5rem;
 }
+
+hr {
+  border: none;
+  width: 80%;
+  margin-inline: auto;
+  border-top: 1px solid #ccc;
+}
