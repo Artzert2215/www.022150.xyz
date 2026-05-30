@@ -17,5 +17,14 @@ main, header, footer {
 }
 
 header, footer {
-    text-align: center;
+  text-align: center;
+}
+
+nav ul {
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
 }

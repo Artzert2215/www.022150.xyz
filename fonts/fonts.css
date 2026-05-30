@@ -30,12 +30,45 @@
   font-display: swap;
 }
 
+:root {
+  --color-primary: #1739d1;
+  --color-secondary: #868686;
+}
+
 body {
   font-family: 'Atkinson Hyperlegible Next', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
 }
 
+h1 {
+  border-bottom: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+h2 {
+  border-bottom: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+}
+
 code, pre, kbd, samp {
   font-family: 'Atkinson Hyperlegible Mono', monospace;
+}
+
+q {
+  font-style: italic;
+}
+
+a {
+  color: var(--color-primary);        /* unvisited */
+  text-decoration: none;            /* remove underline if you want */
+}
+
+a:visited {
+  color: var(--color-primary);        /* after clicking — often a muted variant */
+}
+
+a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;       /* add underline back on hover */
 }
