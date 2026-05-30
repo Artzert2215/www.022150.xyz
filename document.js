@@ -8,7 +8,7 @@ async function handleEncrypt() {
   const text = document.getElementById('htmlcontents').value;
   const password = document.getElementById('password').value;
   const encrypted = await encrypt(text, password);
-  document.getElementById('base64bundle').value = encrypted;
+  document.getElementById('base64bundle').value = `{"cipher": "${encrypted}"}`;
 }
 
 async function loadDocument() {
@@ -18,7 +18,7 @@ async function loadDocument() {
     document.getElementById('content').innerHTML = `
     <p><b>Welcome to the document page!</b><br>
     You may request a document via the url (<code>/document#docid:password</code>).<br>
-    Visit the <a href="https://www.022150.xyz//document.html#example:dummypassword">example document</a> to check out an example.<br>
+    Visit the <a href="./document.html#example:dummypassword" onclick="location.href=this.href; location.reload()">example document</a> to check out an example.<br>
     You can also use the handy tool below to aid in the creation of new documents.</p>
     <p><b>Encryption tool:</b></p>
     <textarea id="htmlcontents" name="htmlcontents" cols="40" rows="5" placeholder="Enter the html contents of the document..."></textarea><br>
@@ -35,7 +35,7 @@ async function loadDocument() {
   const password = parts[1];
 
   // fetch document
-  const res = await fetch(`/documents/${docId}`);
+  const res = await fetch(`./documents/${docId}.json`);
   if (!res.ok) {
     showError("Requested document does not exist or is not currently available.")
     return;
