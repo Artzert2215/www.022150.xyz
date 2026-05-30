@@ -1,0 +1,21 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+main, header, footer {
+  --max-width: 960px;
+  --padding: 8px;
+
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+  margin-block: var(--padding);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: var(--padding);
+}
+
+header, footer {
+    text-align: center;
+}
