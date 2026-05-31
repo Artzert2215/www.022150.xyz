@@ -5,6 +5,21 @@
   --border-radius: 8px;
 }
 
+@media print {
+  header, footer {
+    display: none;
+  }
+
+  main {
+    width: calc(100% - 13px * 2) !important; 
+    border: none !important;
+  }
+}
+
+.raw {
+  border: none;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -77,4 +92,13 @@ button:hover {
 
 button:active {
   opacity: 0.7;
+}
+
+@keyframes breathe {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.loading {
+  animation: breathe 1s ease-in-out infinite;
 }
